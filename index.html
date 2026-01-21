@@ -15,28 +15,41 @@
       flex-direction: column;
       min-height: 100vh;
       justify-content: space-between;
+      background-image: url('img/bg.jpg'); 
+      background-repeat: no-repeat;              
+      background-size: cover;                     
+      height: 100vh;     
     }
     h1 {
       margin-top: 30px;
       font-size: 1.8rem;
+      color: #fff;
     }
+
     .relay-card {
       display: inline-block;
-      background-color: white;
+      
       padding: 20px;
       margin: 15px;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 220px;
       vertical-align: top;
+      backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     }
     .relay-card h2 {
       margin-bottom: 10px;
       font-size: 1.3rem;
+      color: #fff;
     }
     .relay-card p {
       margin-bottom: 10px;
       font-size: 1rem;
+      color: #fff;
     }
     .relay-card button {
       padding: 10px 20px;
@@ -84,18 +97,22 @@
     #loginForm {
       max-width: 400px;
       margin: 80px auto 20px;
-      background: white;
       padding: 30px 20px;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     }
     #loginForm input {
       width: 100%;
-      padding: 12px 15px;
+      padding: 18px 24px;
       margin: 10px 0 20px;
       font-size: 1rem;
       border: 1.5px solid #ccc;
-      border-radius: 10px;
+      border-radius: 6px;
       box-sizing: border-box;
       outline-offset: 2px;
       transition: border-color 0.3s ease;
@@ -105,13 +122,21 @@
     }
     #loginForm button {
       width: 100%;
-      background-color: #1e88e5;
-      color: white;
-      padding: 12px;
-      font-size: 18px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
+      width: 100%;
+    background: linear-gradient(135deg, #00ff88, #0099ff);
+    border: none;
+    border-radius: 6px;
+    padding: 24px 32px;
+    color: #0a0a0f;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
       transition: background-color 0.3s ease;
     }
     #loginForm button:hover {
@@ -136,7 +161,7 @@
     }
     footer {
       font-size: 0.9rem;
-      color: #666;
+      color: #ffffff;
       padding: 10px 0;
       margin-top: 40px;
     }
@@ -283,4 +308,3 @@
   </script>
 </body>
 </html>
-
